@@ -18,7 +18,10 @@
 
 /*BODY*/
 body{
-
+  background-image: url(../image/fond.jpg);
+}
+h1{
+  color: #fff;
 }
 /*HEADER*/
 header{
