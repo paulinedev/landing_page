@@ -1,16 +1,15 @@
-        /*SASS*/
+/*SASS*/
 /* invite de commande */
 /* D: */
 /* D:\ESD-Projets finis\Dev\ */
 /* sass --watch style.scss:style.css */
-
 /*# sourceMappingURL=style.css.map */
-
 /*---POLICE DE TITRE---*/
-
 /*---POLICE DE SOUS-TITRE---*/
-
 /*---POLICE DE TEXTE---*/
+/*BODY*/
+body {
+  /*background-image: url(../image/fond.jpg);*/ }
 
 *{
 
@@ -26,22 +25,44 @@ h1{
 /*FLEXBOX*/
 .c1{
   padding-top: px;
-  display: flex;
-}
-.c2{
-  display: flex;
-  flex-direction: row-reverse;
-}
-img{
-  width: 50%;
-}
-/*HEADER*/
-header{
+#exo1 img {
+  width: 50%; }
 
-}
+#c1, #c2 {
+  margin-left: 3%;
+  display: flex;
+  align-content: center; }
+
+#c2 {
+  flex-direction: row-reverse; }
+
+.text {
+  padding-top: 50px; }
+
+/*EXO2*/
+#exo2 {
+  display: flex;
+  flex-direction: row; }
+  #exo2 img {
+    width: 100px;
+    height: 120px;
+    padding-left: 42%; }
+  #exo2 p {
+    text-align: center; }
+
+#c3 {
+  display: flex;
+  flex-direction: column; }
+
+#c4 {
+  display: flex;
+  flex-direction: column; }
+
+#c5 {
+  display: flex;
+  flex-direction: column; }
+
 /* */
-
 /*FOOTER*/
-footer{
 
-}
+/*# sourceMappingURL=style.css.map */
