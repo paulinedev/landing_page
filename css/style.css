@@ -15,13 +15,25 @@
 *{
 
 }
-
+c1
 /*BODY*/
 body{
-  background-image: url(../image/fond.jpg);
+  /*background-image: url(../image/fond.jpg);*/
 }
 h1{
   color: #fff;
+}
+/*FLEXBOX*/
+.c1{
+  padding-top: px;
+  display: flex;
+}
+.c2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+img{
+  width: 50%;
 }
 /*HEADER*/
 header{
