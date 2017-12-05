@@ -9,7 +9,7 @@
 /*---POLICE DE TEXTE---*/
 /*BODY*/
 body {
-  /*background-image: url(../image/fond.jpg);*/ }
+  background-image: url(../image/fond.jpg); }
 
 h1 {
   color: #fff; }
@@ -63,7 +63,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
-/* */
+/*EXO2*/
+#exo3 {
+  display: flex;
+  flex-flow: row wrap; }
+  #exo3 img {
+    width: 50%; }
+
 /*FOOTER*/
 
 /*# sourceMappingURL=style.css.map */
