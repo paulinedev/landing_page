@@ -11,20 +11,21 @@
 body {
   /*background-image: url(../image/fond.jpg);*/ }
 
-*{
+h1 {
+  color: #fff; }
 
-}
-c1
-/*BODY*/
-body{
-  /*background-image: url(../image/fond.jpg);*/
-}
-h1{
-  color: #fff;
-}
+h2, h3 {
+  color: #410e4e;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; }
+
+h3 {
+  font-size: 15px; }
+
+/*HEADER*/
 /*FLEXBOX*/
-.c1{
-  padding-top: px;
+/*EXO1*/
 #exo1 img {
   width: 50%; }
 
