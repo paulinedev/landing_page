@@ -51,15 +51,7 @@ h3 {
   #exo2 p {
     text-align: center; }
 
-#c3 {
-  display: flex;
-  flex-direction: column; }
-
-#c4 {
-  display: flex;
-  flex-direction: column; }
-
-#c5 {
+.c3 {
   display: flex;
   flex-direction: column; }
 
