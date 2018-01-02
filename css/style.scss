@@ -1,11 +1,11 @@
 /*SASS*/
 /* invite de commande */
 /* D: */
-/* D:\ESD-Projets finis\Dev\ */
+/* D:\ESD-Projets finis\Dev\landing_page\css */
 /* sass --watch style.scss:style.css */
 
 /*# sourceMappingURL=style.css.map */
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
 /*---POLICE DE TITRE---*/
 @font-face {
   font-family: 'FederationClassic';
@@ -18,10 +18,11 @@
 /*---POLICE DE TEXTE---*/
 
 
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
 /*BODY*/
 body{
   background-image: url(../image/fond.jpg);
+  background-position: cover;
 }
 h1{
   color: #fff;
@@ -38,7 +39,7 @@ h3{
   @extend h2;
   font-size: 15px;
 }
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
 /*HEADER*/
 header{
   background-color: #3f4546;
@@ -63,41 +64,104 @@ nav{
     }
   }
 }
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
 /*INDEX*/
   /*SECT1*/
 #sect1{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url(../image/section1.jpg);
   background-size: cover;
   width: 100%;
   height: 800px;
-}
   /*ART1*/
     /*invertion axe x et y qd on est en colonne*/
-#art1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 35%;
-  button{
-    border-radius: 10px;
-    border-color: #791b6d;
-    width: 50%;
-    height: 50px;
-    margin-left: 25%;
-    background-color: #791b6d;
-    a{
-      text-decoration: none;
-      color: white;
-      font-size: 25px;
+  #art1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    button{
+      border-radius: 10px;
+      border-color: #791b6d;
+      width: 50%;
+      height: 50px;
+      background-color: #791b6d;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+  /*ART2*/
+  #art2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    h2{
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 23%;
+    }
+    /*Formulaire*/
+    #formulaire{
+      display: flex;
+      flex-direction: column;
+      margin-left: 23%;
+      input{
+        width: 250px;
+        height: 30px;
+        font-size: 25px;
+      }
+      textarea{
+        width: 506px;
+        height: 150px;
+      }
     }
   }
 }
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
+/*ANIMATION*/
+.chargemt {
+  width: 10%;
+  display: inline;
+  vertical-align: middle;
+  visibility: visible;
+  /* this opacity property hides the chargemt */
+  opacity: 0;
+  margin-top: -10px;
+  animation: rond 3s infinite;
+}
+@keyframes rond{
+	0%{
+		transform: rotate(0deg);
+	}
+  15%{
+    transform: rotate(100deg);
+  }
+	25%{
+		transform: rotate(200deg);
+	}
+	50%{
+		transform: rotate(400deg);
+	}
+	75%{
+		transform: rotate(500deg);
+	}
+	100%{
+		transform: rotate(630deg);
+	}
+}
+input:hover ~ .chargemt {
+  opacity: 1;
+}
+/*-----------------------------------------------------------*/
 /*FLEXBOX*/
-//~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /*EXO1*/
 #exo1{
   img{
@@ -116,7 +180,7 @@ nav{
 .text{
   padding-top: 50px;
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /*EXO2*/
 #exo2{
   img{
@@ -134,7 +198,7 @@ nav{
   display: flex;
   flex-direction: column;
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /*EXO3*/
 #exo3{
   img{
@@ -143,12 +207,12 @@ nav{
   display: flex;
   flex-flow: row wrap;
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*FOOTER*/
 footer{
 
 }
-//-----------------------------------------------------------
+/*-----------------------------------------------------------*/
 /* RESPONSIVE
   TABLETTE */
 @media screen and (max-width: 1000px){
@@ -159,14 +223,31 @@ footer{
     }
   }
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* RESPONSIVE
   SMARTPHONE */
 @media screen and (max-width: 768px){
   #art1{
-    padding-left: 20%;
+    padding-left:10%;
     button{
-      margin-left: 25%;
+      margin-left: 0%;
     }
+  }
+  #art2{
+    #formulaire{
+      margin-left: 23%;
+      input{
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+      }
+      textarea{
+        width: 50px;
+        height: 10px;
+      }
+    }
+  }
+  .chargemt {
+    display: none;
   }
 }

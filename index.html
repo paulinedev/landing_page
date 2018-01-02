@@ -12,6 +12,7 @@
 
 <body>
   <header>
+      <!-- MENU -->
     <nav>
       <a href="index.html">Menu</a>
       <a href="flexbox.html">Exo flex</a>
@@ -20,12 +21,32 @@
     </nav>
   </header>
   <section id="sect1">
+      <!-- ARTICLE 1 -->
     <article id="art1">
       <h1> Decouvrir la vie </h1>
           <br> <br>
       <button type="button" name="flex"> <a href="flexbox.html"> FLEXBOX </a> </button>
+          <br>
+    </article>
+      <!-- ARTICLE 2 -->
+    <article id="art2">
+      <!-- FORMULAIRE -->
+      <div id="formulaire">
+        <h2>Contactez moi</h2>
+              <br>
+        <form>
+          <input type="text" name="field1" placeholder="Full Name" />
+          <input type="email" name="field2" placeholder="Email" />
+          <img src="image/chargement.png" class="chargemt" alt="chargement">
+                <br>
+          <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+                <br>
+          <input type="button" value="Send Message" />
+        </form>
+      </div>
     </article>
   </section>
+      <!-- FOOTER -->
   <footer>
 
   </footer>
